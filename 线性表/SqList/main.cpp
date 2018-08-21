@@ -1,5 +1,4 @@
-#include "SqList.h"
-#include "SqListAlgorithm.h"
+#include "src/SqList.h"
 #include <stdio.h>
 int main(void)
 {

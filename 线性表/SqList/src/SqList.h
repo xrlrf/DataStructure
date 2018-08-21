@@ -1,7 +1,7 @@
 #ifndef WUSTXIAO_20180729_SQLIST_H
 #define WUSTXIAO_20180729_SQLIST_H
 // #define MaxSize 50  // 定义线性表的最大长度
-#define ElemType int
+typedef int ElemType;
 #define LIST_INIT_SIZE 10
 #define LISTINCREMENT 2
 
@@ -27,5 +27,6 @@ bool ListDelete(SqList &L,int i,ElemType &e);   // 删除操作。删除表L中�
 void PrintList(SqList L);   // 输出操作。按前后顺序输出线性表L的所有元素值
 bool Empty(SqList L);   // 判空操作。若L为空表，则返回true,否则返回false
 void DestroyList(SqList &L);   // 销毁操作，若L为空表，则返回true,否则返回false
+bool MergeList(SqList La,SqList Lb,SqList &Lc); // 顺序表的合并
 
 #endif
